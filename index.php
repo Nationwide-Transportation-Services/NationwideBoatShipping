@@ -183,7 +183,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
        
        .col-sm-4 {
            flex: 1;
-           max-width: 3000%;
+           max-width: 100%;
            box-sizing: border-box;
            padding: 10px;
            margin: 5px;
@@ -192,9 +192,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
            box-shadow: 0 0 5px rgba(0,0,0,0.1);
        }
        
+       .col-sm-4 .icon-wrapper{
+           background-size: cover;
+            background-position: center;
+            background-radius:10px;
+       }
+       
        @media (max-width: 768px) {
            .col-sm-4 {
-               max-width: 100%;
+               flex: 1 1 100%;
+               margin: 5px;
            }
        }
 
